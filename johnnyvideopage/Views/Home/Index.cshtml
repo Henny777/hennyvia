@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Titanic";
+}
+
+
+<div id="container">
+    <div>
+       
+        <div class="center-align">
+            <img id="poster-img" src="~/images/moviePoster.jpg" />
+            <h2 class="title">Titanic</h2>
+
+            <div id="myModal" class="modal">
+                <span class="close">×</span>
+                <img class="modal-content" id="img01">
+                
+            </div>
+
+            <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('poster-img');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+            </script>
+
+            
+        </div>
+        <div class="float-right"> 
+                <button class="btn-getviaplay center-align">Skaffa Viaplay</button>  
+            <img id="bg-image" src="~/images/bg_image.jpg"/>
+        </div>
+        <div>
+            <h4 class="title">Drama/Romantik / 1997 / 3h 7 min / <span class="white-borders">HD</span> <span class="white-borders"> 12 år </span></h4>
+        </div>
+        <hr/>
+        <div class="myRow">
+            <div><img id="icon" src="~/images/IMDb-icon.png" /></div>
+            <div><h4 class="title">7.7</h4></div>
+        </div>
+        <hr/>
+    </div>
+    <div class="width-corring">
+        <p class="title">
+            Den 10 April 1912 stävar Titanic ut från hamnen i Southhampton på sin jungfruresa. I första klass bor 17-åriga Rose i en skyddad värld, styrd av stränga moralregler och familjens förväntningar. I tredje klass, långt under däck, ligger Jack på sin brits och drömmer det stora äventyret. När ödet låter de två mötas väcks känslor de aldrig tidigare upplevt.
+        </p>
+        <p class="title">
+            Skådespelare: <span>Leonardo DiCaprio</span>, <span>Kathy Bates</span>, <span>Bill Paxton</span> , <span>Kate Winslet</span> , <span>Frances Fisher</span> , <span>Billy Zane</span> , <span>Gloria Stuart</span>
+            
+        </p>
+        <p class="title">
+            Regissör: <span>James Cameron</span>
+            
+        </p>
+        <p class="title country">
+            Land: <span class="country-flag"><img src="~/images/USA.png"/></span>USA
+        </p>
+    </div>
+
+    <div class="adjust-margin-height">
+        <h2 class="title">Liknande Filmer</h2>
+        <div class="flex">
+            <div>
+                <img src="~/images/australia-movie-poster.jpg" />
+            </div>
+            <div>
+                <img src="~/images/date-night-movie-poster.jpg"/>
+            </div>
+            <div>
+                <img src="~/images/ghosts-of-girlfriends-past.jpg"/>
+            </div>
+            <div>
+                <img src="~/images/going-the-distance.jpg"/>
+            </div>
+            <div>
+                <img src="~/images/pslove.jpg"/>
+            </div>
+            <div>
+                <img src="~/images/serena.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="title">Liknande Serier</h2>
+        <div class="flex">
+            <div>
+                <img src="~/images/beauty-and-the-beast-tv-show-poster.jpg" />
+            </div>
+            <div>
+                <img src="~/images/family.jpg" />
+            </div>
+            <div>
+                <img src="~/images/Girls.jpg" />
+            </div>
+            <div>
+                <img src="~/images/outlander.jpg" />
+            </div>
+            <div>
+                <img src="~/images/sherlock.jpg" />
+            </div>
+            <div>
+                <img src="~/images/nashville.jpg" />
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,305 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: black;
+    background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.body-bg {
+    background-image: url(../images/bg_image.jpg);
+    background-size:cover 1000px;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#viaplay {
+    height:50px;
+    padding:5px;
+}
+
+.bg {
+    background-color: black;
+}
+
+#poster-img {
+    height: 20em;
+    width: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height:95%;
+   
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.center-align {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-align h2 {
+    width: 50%;
+}
+
+.title {
+    padding-top: 1em;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.title span:hover {
+    text-decoration:underline;
+}
+
+.float-right{
+    float:right;
+    position: relative;
+    margin-right: 10%;
+    display: inline-block;
+    height: 22em;
+    width: 60%;
+}
+
+.float-right img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    border-radius: 100px;
+}
+
+.float-right button {
+    opacity: 1.0;
+    position: relative;
+    z-index: 2;
+}
+
+.width-corring {
+    width: 50%;
+}
+
+.myRow div {
+    display:inline-block;
+}
+
+#icon {
+    height:40px;
+    width:45px;
+}
+
+.btn-getviaplay {
+  background: #34d93f;
+  background-image: -webkit-linear-gradient(top, #34d93f, #36b82b);
+  background-image: -moz-linear-gradient(top, #34d93f, #36b82b);
+  background-image: -ms-linear-gradient(top, #34d93f, #36b82b);
+  background-image: -o-linear-gradient(top, #34d93f, #36b82b);
+  background-image: linear-gradient(to bottom, #34d93f, #36b82b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position:relative;
+  margin: -20px -50px; 
+   top:70%; 
+   left:40%;
+}
+
+.btn-getviaplay:hover {
+  background: #40c21f;
+  background-image: -webkit-linear-gradient(top, #40c21f, #87bd22);
+  background-image: -moz-linear-gradient(top, #40c21f, #87bd22);
+  background-image: -ms-linear-gradient(top, #40c21f, #87bd22);
+  background-image: -o-linear-gradient(top, #40c21f, #87bd22);
+  background-image: linear-gradient(to bottom, #40c21f, #87bd22);
+  text-decoration: none;
+}
+
+.white-borders {
+    border: white ridge 2px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.adjust-margin-height {
+    margin-top: 5em;
+}
+
+.country {
+    position: relative;
+    display: inline-block;
+}
+
+.country .country-flag {
+     visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.country:hover .country-flag {
+    visibility: visible;
+    border: white solid;
+}
+
+.flex {
+  display:flex;
+  }
+
+.flex div {
+  flex:1;
+  margin:20px;
+  }
+
+.flex img {
+    width:100%;
+}
+
+@media screen and (max-width: 800px) {
+    #bg-image {
+        visibility:hidden;
+    }
+
+    .width-corring {
+        width:100%;
+    }
+
+    .center-align{
+        display: block;
+        align-items:center;
+        justify-content:center; 
+        width:100%;
+        height:auto;
+    }
+
+    #poster-img {
+        margin:0;
+        display:block;
+        width:100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .white-borders {
+        display: inline-block;
+    }
+
+    .float-right {
+        height: 100px;
+        width: 100%;
+        margin: 0;
+        display: block;
+        align-items:center;
+        justify-content:center; 
+    }
+
+    .btn-getviaplay {
+        left: 0;
+        top:20%;
+        margin:auto;
+         display:block;
+        width:100%;
+    }
+
+    .center-align {
+        width: 80%;
+    }
+
+   .flex{
+       display:flex;
+       flex-wrap:wrap;
+   }
+
+   .flex img{
+      flex-grow:1;
+       width:auto; 
+       max-width:180px; 
+       height:auto !important
+   }
+}
