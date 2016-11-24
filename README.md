@@ -23,6 +23,14 @@ The stuff I left out:
   - Favicon
   - More SEO-tags
   - Modify images in Photoshop or likewise
+  - Unit tests
+  
+ I left out the api calls because i tried but didn´t manage it to work. I decided to focus on the UI instead.
+ I left out the Jquery carousel because I have never done it before and didn´t want to risk it.
+ The favicon is important to me when the site is published, but this one isn´t.
+ I have worked with SEO at Sportngo but thought it was not relevant to this projects.
+ But I have no experience in photoshop or likewise and had to skip that part.
+ Earlier I have done unit tests to Java back-end but never done automised front-end test. Since I skipped Api calls it was hard to test anything. 
   
 I added a few things from the mock-up
   - Hover the country and you will see the flag
